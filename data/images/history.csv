@@ -1,0 +1,2 @@
+epoch,train_loss,valid_loss,error_rate,accuracy,top_k_accuracy,top_k_accuracy,time
+0,1.469534,0.853200,0.244371,0.755629,0.913234,0.950027,03:48
