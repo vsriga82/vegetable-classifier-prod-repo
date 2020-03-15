@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<ul class="flash">
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-subhead">A fun project to help people lost in the world of vegetables :)</h1>
+        <p class="splash-subhead">This is a deep learning based web app that can predict vegetable name based on an image upload. 
+            The results shown are top 5 predictions made by the model. This app is created by Sriganesh Venugopal with guidance from Janu Verma.</p>
+        
+    </div>
+
+</div>
+{% endblock %}
